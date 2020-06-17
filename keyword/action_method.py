@@ -84,7 +84,7 @@ class ActionMethod:
         '''
         获取toastelement
         '''
-        time.sleep(2)
+        time.sleep(3)
         toast_element = ("xpath", "//*[contains(@text," + args[0] + ")]")
         return WebDriverWait(self.driver, 10, 0.1).until(
             EC.presence_of_element_located(toast_element))
